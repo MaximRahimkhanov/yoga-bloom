@@ -3,7 +3,7 @@
 /* mobile */
 
 .container {
-  background-color: #dce6f8;
+  background-color: #edf3fd;
 }
 
 .yoga-container-title {
@@ -21,7 +21,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: var(--color-scheme-1-text);
+  color: #212121;
 }
 
 .yoga-title-heading {
@@ -30,7 +30,7 @@
   line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
-  color: var(--color-scheme-1-text);
+  color: #212121;
 }
 
 .yoga-title-text {
@@ -38,7 +38,7 @@
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: var(--color-scheme-1-text);
+  color: #212121;
 }
 
 .yoga-container-content {
@@ -68,7 +68,7 @@
   line-height: 1.4;
   letter-spacing: 0.01em;
   text-align: center;
-  color: var(--color-scheme-1-text);
+  color: #212121;
 }
 
 .yoga-content-text {
@@ -76,14 +76,14 @@
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: var(--color-scheme-1-text);
+  color: #212121;
 }
 
 .yoga-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  color: var(--color-neutral-darkest);
+  color: #212121;
   display: flex;
   align-items: center;
   justify-content: center;
