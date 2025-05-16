@@ -1,0 +1,13 @@
+.header {}
+.header-navigator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-menu {}
+.nav-list {
+    display: none;
+}
+.nav-link {}
+.icon-logo {}
+.header-link {}
