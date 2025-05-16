@@ -95,29 +95,10 @@
 .team-image {
   border-radius: 16px;
   margin-bottom: 20px;
-  object-fit: cover;
-  object-position: center top;
 }
 @media screen and (min-width: 768px) {
   .team-image {
     margin-bottom: 24px;
-  }
-}
-@media screen and (min-width: 1336px) {
-  .team-image {
-    width: 421.33px;
-  }
-  .team-list-item:nth-child(1) .team-image,
-  .team-list-item:nth-child(3) .team-image {
-    height: 395px;
-  }
-  .team-list-item:nth-child(2) .team-image {
-    height: 397px;
-  }
-  .team-list-item:nth-child(4) .team-image,
-  .team-list-item:nth-child(5) .team-image,
-  .team-list-item:nth-child(6) .team-image {
-    height: 410.59px;
   }
 }
 
