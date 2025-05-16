@@ -1,4 +1,4 @@
-/* Styles for Mobile devices */
+/* 
 .container {
     min-width: 320px;
     max-width: 375px;
@@ -6,7 +6,7 @@
     padding: 0 16px;
 }
 
-/* Styles for Tablet devices */
+
 @media only screen and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -14,16 +14,32 @@
     }
 }
 
-/* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1200px;
         padding: 0 64px;
     }
 }
-
+ */
 
 /* #region hero */
+.hero {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-img-wrapper {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.hero-img-wrapper picture,
+.hero-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .hero-title {
     font-family: "Cabin", sans-serif;
@@ -46,7 +62,7 @@
 .hero-link-list {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 16px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -78,31 +94,32 @@
     width: 100%;
     height: 46px;
     background-color: rgba(13, 11, 10, 0.05);
+    margin-bottom: 48px;
 }
 
 @media only screen and (min-width: 768px) {
+    .hero-img-wrapper {
+            max-width: 768px;
+        }
     .hero-title {
-        /* max-width: 496px;
-        margin-bottom: 36px;
-        font-size: 56px;
-        line-height: 1.07; */
+        width: 423px;
+        margin: 24px 0 16px;
     }
 
-    .hero-container {
-        /* padding: 112px 0; */
+    .hero-text {
+        font-size: 18px;
+        margin-bottom: 32px;
     }
 }
 
 @media only screen and (min-width: 1200px){
 
-    .hero-container {
-        /* padding: 188px 0; */
-       
-    }
+    .hero-img-wrapper {
+            max-width: 1440px;
+        }
 
     .hero-title {
-        /* font-size: 56px;
-        margin-bottom: 48px; */
+        font-size: 72px;
     }
 }
 
