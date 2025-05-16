@@ -3,6 +3,7 @@
 /* mobile */
 
 .container {
+  background-color: #dce6f8;
 }
 
 .yoga-container-title {
@@ -49,6 +50,10 @@
 }
 
 .yoga-content-list {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .yoga-content-item {
@@ -84,11 +89,12 @@
   justify-content: center;
   flex-direction: row;
   gap: 8px;
-  border: 1px solid var(--color-hawkes-blue);
+  border: 1px solid var(#d2e6fa);
   border-radius: 100px;
   padding: 10px 24px;
   width: 343px;
   height: 46px;
+  background-color: #d2e6fa;
 }
 
 /* mobile */
