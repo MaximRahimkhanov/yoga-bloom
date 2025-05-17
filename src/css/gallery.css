@@ -88,15 +88,13 @@
 }
 
 .gallery-img {
-    /* width: calc(100% / 2 - 12px); */
     border-radius: 16px;
-    /* min-width: 155px; */
+    min-width: 155px;
 }
 
 @media screen and (min-width: 768px) {
     .gallery-img {
         min-width: 200px;
-        
     }
 }
 
