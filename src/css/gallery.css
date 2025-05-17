@@ -5,6 +5,13 @@
     flex-direction: column;
     align-items: center;
 }
+
+ @media screen and (min-width: 1336px) {
+    .gallery-container {
+        min-width: 1440px;
+    }
+}
+
 .gallery-title {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
