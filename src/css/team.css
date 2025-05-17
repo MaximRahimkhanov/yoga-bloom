@@ -150,3 +150,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.team-social-icon {
+  display: inline-block;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-icon:hover,
+.team-social-icon:focus {
+  transform: scale(1.5);
+}
