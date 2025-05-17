@@ -1,27 +1,19 @@
 /* #region yoga classes */
 
+.yoga-classes {
+  background-color: #dfebeb;
+  padding: 64px 0;
+}
+
 /* mobile */
-
-.container {
-  background-color: #edf3fd;
-}
-
-.yoga-container-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 12px;
-  padding: 64px 16px;
-  max-width: 375px;
-}
 
 .yoga-title-tagline {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #212121;
+  color: #0d0b0a;
+  margin-bottom: 12px;
 }
 
 .yoga-title-heading {
@@ -30,36 +22,22 @@
   line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
-  color: #212121;
+  color: #0d0b0a;
+  margin-bottom: 20px;
 }
 
 .yoga-title-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: #212121;
-}
-
-.yoga-container-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 48px;
+  color: #0d0b0a;
+  margin-bottom: 48px;
 }
 
 .yoga-content-list {
-  align-items: flex-start;
-  justify-content: flex-start;
+  display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-
-.yoga-content-item {
-}
-
-.yoga-content-images {
+  gap: 48px;
+  margin-bottom: 48px;
 }
 
 .yoga-content-title {
@@ -68,33 +46,43 @@
   line-height: 1.4;
   letter-spacing: 0.01em;
   text-align: center;
-  color: #212121;
+  color: #0d0b0a;
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .yoga-content-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: #212121;
+  color: #0d0b0a;
 }
 
 .yoga-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  color: #212121;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 8px;
-  border: 1px solid var(#d2e6fa);
+  color: #0d0b0a;
+  border: none;
   border-radius: 100px;
-  padding: 10px 24px;
-  width: 343px;
+  min-width: 343px;
   height: 46px;
-  background-color: #d2e6fa;
+  background-color: #c2d9fc;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 374px) {
+  .yoga-btn {
+    min-width: 288px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.yoga-btn:hover,
+.yoga-btn:focus {
+  background-color: rgba(13, 11, 10, 0.05);
+  outline: none;
 }
 
 /* mobile */
@@ -102,13 +90,67 @@
 /* tablet */
 
 @media screen and (min-width: 768px) {
+  .yoga-classes {
+    background-color: transparent;
+    padding: 40px 0;
+  }
+
+  .yoga-title-text {
+    font-size: 18px;
+  }
+  .yoga-content-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 auto;
+  }
+  .yoga-content-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yoga-btn {
+    margin: 40px auto 0 auto;
+    min-width: 110px;
+    height: 46px;
+    white-space: nowrap;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+  .yoga-content-item:nth-child(3) {
+    width: 100%;
+  }
 }
 
 /* tablet */
 
 /* desktop */
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1336px) {
+  .yoga-classes {
+    padding: 112px 0;
+  }
+  .yoga-title-heading {
+    font-size: 52px;
+  }
+
+  .yoga-content-title {
+    font-size: 36px;
+  }
+  .yoga-content-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .yoga-content-item {
+    width: calc((100% - 24px) / 3);
+  }
 }
 /* desktop */
 
