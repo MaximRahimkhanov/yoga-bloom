@@ -130,7 +130,7 @@
 /* #endregion */
 
 /* #region tablet 768>1336 */
-@media (min-width: 768px) and (max-width: 1336px) {
+@media (min-width: 768px) and (max-width: 1335px) {
   .section-pricing {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -223,7 +223,7 @@
 }
 
 /* #endregion */
-@media (min-width: 1337px) {
+@media (min-width: 1336px) {
   .div-pricing-cards {
     flex-direction: row;
   }
