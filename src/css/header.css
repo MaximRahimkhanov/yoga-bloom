@@ -110,14 +110,17 @@ a.header-nav-link::after {
     content: "";
     position: absolute;
     bottom: -4px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 0;
     height: 2px;
     background-color: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
 }
 
 a.header-nav-link:hover::after {
+    width: 100%;
     background-color: rgba(13, 11, 10, 0.5);
 }
 
