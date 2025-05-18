@@ -7,10 +7,6 @@
         const headerButton = document.querySelector('.header-button');
         const navigationLinks = document.querySelectorAll('.navigation-link');
 
-        navigationLinks.forEach((link) => {
-            link.addEventListener('click', onToggleMenu);
-        });
-
         function onToggleMenu() {
             burgerMenu.classList.toggle('is-menu-open');
             menu.classList.toggle('is-menu-open');
@@ -24,6 +20,10 @@
             closeMenu.classList.remove('is-menu-open');
             header.classList.remove('is-menu-open');
         }
+
+        navigationLinks.forEach((link) => {
+            link.addEventListener('click', onToggleMenu);
+        });
 
         headerButton.addEventListener('click', onCloseMenu);
         burgerMenu.addEventListener('click', onToggleMenu);
