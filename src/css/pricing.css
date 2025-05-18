@@ -3,6 +3,7 @@
 .section-pricing {
   padding-top: 64px;
   padding-bottom: 64px;
+  background: #f8fbfe;
 }
 
 .div-pricing-title {
@@ -125,6 +126,16 @@
   height: 46px;
 
   background: #c2d9fc;
+}
+
+.button-pricing:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: rgba(13, 11, 10, 0.05);
+}
+
+.button-pricing:focus {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: rgba(13, 11, 10, 0.05);
 }
 
 /* #endregion */
