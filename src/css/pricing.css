@@ -104,12 +104,6 @@
   flex-direction: row;
   gap: 16px;
 }
-/* hide-li Access to advanced classes in card  */
-@media (min-width: 768px) {
-  .list-item {
-    display: none;
-  }
-}
 
 .button-pricing {
   font-weight: 500;
@@ -154,9 +148,14 @@
     padding-right: 32px;
     max-width: 768px;
   }
+
   .div-pricing-title {
     width: 768px;
     width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .p-bill {
     margin-bottom: 24px;
   }
 
@@ -202,6 +201,7 @@
     display: flex;
     max-width: 320px;
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .button-pricing {
@@ -216,6 +216,16 @@
 }
 
 @media (min-width: 768px) {
+  /* hide-li Access to advanced classes in card  */
+
+  .list-item {
+    display: none;
+  }
+
+  .section-pricing {
+    background: #f2fafa;
+  }
+
   .p-pricing-title {
     margin-bottom: 16px;
   }
@@ -227,35 +237,44 @@
   .h3-pricing {
     font-size: 22px;
   }
+
   .p-bill {
-    font-weight: 400;
     font-size: 72px;
   }
 }
 
 /* #endregion */
 @media (min-width: 1336px) {
+  .div-pricing-title {
+    margin-bottom: 40px;
+  }
+
   .div-pricing-cards {
     flex-direction: row;
   }
+
   .pricing-card {
     max-width: 421px;
     width: 100%;
     padding: 32px;
   }
+
   .h2-pricing {
     font-size: 52px;
   }
+
   .p-bill {
     margin-bottom: 32px;
   }
+
   .ul-pricing-card {
-    margin-bottom: 124px;
+    margin-bottom: 116px;
   }
 
   .ul-pricing-tricard {
     margin-bottom: 32px;
   }
+
   .button-pricing {
     max-width: 421px;
   }
