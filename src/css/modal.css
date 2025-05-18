@@ -4,9 +4,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    visibility: hidden;
+    background: rgba(0, 0, 0, 0.25);
+    opacity: 1;
+    /* visibility: hidden; */
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -15,6 +15,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    min-width: 320px;
     width: 100%;
     height: 100%;
     /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -25,19 +26,26 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* padding: 72px 24px 24px 24px; */
+    padding: 64px 16px 112px 16px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
   }
   
-  .backdrop:not(.is-open) .modal {
+  /* .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -50%) scale(1);
-  }
+  } */
   
   .button-close {
     fill: currentColor;
     position: absolute;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    left: 16px;
-    top: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    right: 16px;
+    top: 16px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -48,20 +56,48 @@
     pointer-events: auto;
   }
   
-  .modal-p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
+  .modal-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
     text-align: center;
-    color: #2e2f42;
-    margin-bottom: 16px;
+    color: #0d0b0a;
+    margin: 0 auto;
+    padding-bottom: 32px;
   }
+
+  .modal-text {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin: 0 auto;
+    padding-bottom: 8px;
+  }
+
+  .modal-price  {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  }
+
   .form {
-    margin-bottom: 16px;
+    width: 100%;
+    /* margin-bottom: 24px; */
   }
   .form-div {
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
   }
   
   .input:focus + .close {
@@ -71,114 +107,67 @@
     border-color: #4d5ae5;
   }
   
-  .label {
+  .label-modal {
+    font-family: "Sarabun", sans-serif;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--light-slate);
-    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0d0b0a;
+    margin-bottom: 8px;
     display: block;
   }
   .input-div {
     position: relative;
   }
   .input {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    /* width: 343px; */
+    height: 42px;
     width: 100%;
-    height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    padding-left: 38px;
+    /* height: 40px; */
+    /* border: 1px solid rgba(46, 47, 66, 0.4); */
+    /* border-radius: 4px; */
+    /* padding-left: 38px; */
     outline: none;
-    background-color: transparent;
+    background: rgba(13, 11, 10, 0.05);
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .textarea {
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
+  
+  .button-modal {
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 10px 24px;
     width: 100%;
-    height: 120px;
-    padding: 8px 16px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
-    outline: transparent;
-    resize: none;
-    background-color: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .textarea-div {
-    margin-bottom: 16px;
-  }
-  textarea::placeholder {
-    color: #2e2f42;
-  }
-  .textarea:focus {
-    border-color: #4d5ae5;
-  }
-  .input-div svg {
-    fill: #2e2f42;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-  }
-  .input-div:has(.input:hover) svg {
-    fill: #4d5ae5;
+    height: 46px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0d0b0a;
+    background-color: #c2d9fc;
+    margin-top: 24px;
+    
+    /* color: #ffffff; */
+    /* font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%; */
+    text-align: center;
+    /* width: 100%; */
+    /* height: 42px; */
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .input:hover {
     border: 1px solid #4d5ae5;
     border-color: #4d5ae5;
   }
-  .checkbox {
-    border-radius: 2px;
-    border: 1px solid var(--navy-blue-modal);
-    width: 16px;
-    height: 16px;
-  }
-  .label-check {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-  }
-  .checkbox-div {
-    margin-bottom: 24px;
+ 
+ 
   
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .checkbox:checked + .label-check > .check-empty {
-    background-color: #404bbf;
-    border: none;
-    fill: #ffffff;
-  }
-  .checkbox:checked + .label-check .check-empty {
-    fill: var(--cloud);
-  }
-  .checkbox:focus + .label-check > .check-empty {
-    background-color: #404bbf;
-  }
-  .check-empty {
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-    margin-right: 8px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    flex-shrink: 0;
-  }
   
   @media screen and (max-width: 767px) {
     .modal {
