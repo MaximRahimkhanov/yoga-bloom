@@ -123,6 +123,10 @@ a.mobile-menu-button {
     background-color: rgba(13, 11, 10, 0.5);
 }
 
+.mobile-menu-link {
+    padding: 15px 0;
+}
+
 .header a.header-nav-link:hover,
 .header a.header-nav-link:focus,
 .header a.mobile-menu-link:hover,
@@ -156,12 +160,10 @@ a.mobile-menu-button {
 
 .mobile-menu-list {
     margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
-.mobile-menu-list li {
-    padding: 12px 0;
-}
-
 
 .header-button:hover,
 .header-button:focus,
