@@ -16,6 +16,7 @@ body {
     text-align: center;
     color: #0d0b0a;
     margin: 0;
+    margin-bottom: 24px;
 }
 
 .about-us-paragraf {
@@ -27,7 +28,7 @@ body {
     color: #0d0b0a;
     /* padding: 0; */
     margin: 0;
-    margin-top: 24px;
+    margin-bottom: 40px;
 }
 
 .about-us-list {
@@ -36,7 +37,7 @@ body {
     flex-direction: row;
     justify-content: center;
     padding-left: 0;
-    margin-top: 40px;
+    margin: 0;
     margin-bottom: 40px;
 }
 
@@ -85,14 +86,14 @@ body {
 }
 
 .about-us-button:hover {
-    border: 1px solid #4D5664;
-    background: #4D5664;
+    border: 1px solid #9BADC9;
+    background: #9BADC9;
     color: #F2FAFA;
 }
 
 .about-us-button:focus {
-    border: 1px solid #4D5664;
-    background: #4D5664;
+    border: 1px solid #9BADC9;
+    background: #9BADC9;
     color: #F2FAFA;
 }
 
