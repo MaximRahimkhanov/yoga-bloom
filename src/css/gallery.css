@@ -1,24 +1,32 @@
+.section-gallery {
+    padding: 0 20px;
+    margin: 64px auto;
+}
+
+ @media screen and (min-width: 768px) {
+    .section-gallery {
+       margin: 40px auto;
+       padding: 0 32px;
+    }
+}
+
+ @media screen and (min-width: 1336px) {
+    .section-gallery {
+        margin: 112px auto;
+        padding: 0 64px;
+    }
+}
+
 .gallery-container {
     background-color: #f2fafa;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
-    margin: 64px 0;
-}
-
- @media screen and (min-width: 768px) {
-    .gallery-container {
-       margin: 40px 0;
-       padding: 0 32px;
-    }
 }
 
  @media screen and (min-width: 1336px) {
     .gallery-container {
-        margin: 112px 0;
-        padding: 0 64px;
         min-width: 1440px;
     }
 }
