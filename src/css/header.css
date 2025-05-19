@@ -26,6 +26,7 @@ a.mobile-menu-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px 0;
 }
 
 .mobile-menu {
@@ -193,6 +194,10 @@ a.mobile-menu-button {
     .header-button-part,
     .mobile-menu-button-part {
         display: inline;
+    }
+
+    .header-logo {
+        padding: 20px 0;
     }
 }
 
