@@ -1,17 +1,17 @@
 .section-gallery {
-    padding: 64px 20px;
+    padding: 64px 0px;
     margin: 0 auto;
 }
 
  @media screen and (min-width: 768px) {
     .section-gallery {
-       padding: 40px 32px;
+       padding: 40px 0px;
     }
 }
 
  @media screen and (min-width: 1336px) {
     .section-gallery {
-        padding: 112px 64px;
+        padding: 112px 0px;
     }
 }
 
@@ -21,11 +21,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 20px;
+}
+
+ @media screen and (min-width: 768px) {
+    .section-gallery {
+       padding: 0px 32px;
+    }
 }
 
  @media screen and (min-width: 1336px) {
     .gallery-container {
-        /* min-width: 1440px; */
+        padding: 0px 64px;
     }
 }
 
