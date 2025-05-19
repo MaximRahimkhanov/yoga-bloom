@@ -1,9 +1,46 @@
 <!-- #region hero -->
 
-<section>
-    <div class="container">
+<section class="section hero">
+  <div class="hero-img-wrapper">
+    <picture>
+      <source
+        srcset="../img/hero/mob/hero@1x.jpg 1x, ../img/hero/mob/hero@2x.jpg 2x"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="../img/hero/tab/hero@1x.jpg 1x, ../img/hero/tab/hero@2x.jpg 2x"
+        media="(min-width: 768px) and (max-width: 1335px)"
+      />
+      <source
+        srcset="
+          ../img/hero/desk/hero@1x.jpg 1x,
+          ../img/hero/desk/hero@2x.jpg 2x
+        "
+        media="(min-width: 1336px)"
+      />
+      <img src="../img/hero/mob/hero@1x.jpg" alt="Yoga Process" />
+    </picture>
+  </div>
+  <div class="container hero-container">
+    <h1 class="hero-title">Transform Your Life with Our Yoga Classes</h1>
 
+    <div>
+      <p class="hero-text">
+        Discover the harmony of mind and body through our expertly designed yoga
+        programs. Join a community dedicated to wellness and personal growth.
+      </p>
+      <ul class="hero-link-list">
+        <li class="hero-link-cover">
+          <a href="#pricing" class="link-btn"
+            >Join <span class="btn-part">Now</span></a
+          >
+        </li>
+        <li class="hero-link-other-cover">
+          <a href="#gallery" class="link-btn">Learn More</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </section>
 
-<!-- #endregion -->
+<!-- #endregion hero -->
