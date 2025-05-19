@@ -1,19 +1,17 @@
 .section-gallery {
-    padding: 0 20px;
-    margin: 64px auto;
+    padding: 64px 20px;
+    margin: 0 auto;
 }
 
  @media screen and (min-width: 768px) {
     .section-gallery {
-       margin: 40px auto;
-       padding: 0 32px;
+       padding: 40px 32px;
     }
 }
 
  @media screen and (min-width: 1336px) {
     .section-gallery {
-        margin: 112px auto;
-        padding: 0 64px;
+        padding: 112px 64px;
     }
 }
 
@@ -27,7 +25,7 @@
 
  @media screen and (min-width: 1336px) {
     .gallery-container {
-        min-width: 1440px;
+        /* min-width: 1440px; */
     }
 }
 
@@ -108,12 +106,12 @@
 
 @media screen and (min-width: 768px) {
     .gallery-img {
-        min-width: 200px;
+        width: 340px;
     }
 }
 
 @media screen and (min-width: 1336px) {
     .gallery-img {
-        min-width: 421px;
+        width: 421px;
     }
 }
