@@ -3,15 +3,21 @@ body {
 }
 
 .container {
+    padding: 0 16px;
+}
+
+.about-us {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0 16px;
 }
 
 .about-us-container {
     background: #f2fafa;
     padding: 64px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-us-title {
@@ -63,6 +69,7 @@ body {
     letter-spacing: 0.01em;
     text-align: center;
     color: #0d0b0a;
+    margin: 0;
 }
 
 .about-us-paragraf-ul {
@@ -74,6 +81,7 @@ body {
     line-height: 160%;
     text-align: center;
     color: #0d0b0a;
+    margin: 0;
 }
 
 .about-us-button {
@@ -153,6 +161,7 @@ body {
         align-items: center;
         width: 343px;
         margin-bottom: 48px;
+        gap: 48px;
     }
 
     .about-us-punkt {
@@ -169,6 +178,7 @@ body {
         letter-spacing: 0.01em;
         text-align: center;
         color: #0d0b0a;
+        margin-bottom: 20px;
     }
 
     .about-us-paragraf-ul {
@@ -266,6 +276,7 @@ body {
         letter-spacing: 0.01em;
         text-align: center;
         color: #0d0b0a;
+        margin-bottom: 0px;
     }
 
     .about-us-paragraf-ul {
@@ -343,6 +354,7 @@ body {
         flex-wrap: nowrap;
         flex-direction: row;
         margin-bottom: 40px;
+        gap: 24px;
     }
 
     .about-us-punkt {
@@ -360,6 +372,7 @@ body {
         letter-spacing: 0.01em;
         text-align: center;
         color: #0d0b0a;
+        margin-bottom: 24px;
     }
 
     .about-us-paragraf-ul {
