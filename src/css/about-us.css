@@ -3,15 +3,16 @@ body {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
     padding: 0 16px;
 }
 
 .about-us-container {
     background: #f2fafa;
     padding: 64px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-us-title {
