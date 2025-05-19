@@ -99,7 +99,7 @@ body {
 
 .about-us-button-span {}
 
-@media (min-width:375px) {
+@media (min-width:320px) {
 
     body {
         padding: 0;
@@ -236,6 +236,7 @@ body {
 
     .about-us-punkt {
         width: 340px;
+        margin-bottom: 22px;
     }
 
     .about-us-title-ul {
@@ -281,7 +282,7 @@ body {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1336px) {
     .about-us-container {
         padding: 112px 64px;
         background: #f2fafa;
@@ -322,6 +323,7 @@ body {
 
     .about-us-punkt {
         width: 310px;
+        margin-bottom: 0;
     }
 
     .about-us-title-ul {
