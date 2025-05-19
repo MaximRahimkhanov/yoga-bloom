@@ -2,14 +2,11 @@ body {
     font-family: "Roboto", "Sarabun", "Cabin", sans-serif;
 }
 
-.container {
-    padding: 0 16px;
-}
-
 .about-us {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 64px;
 }
 
 .about-us-container {
@@ -121,7 +118,7 @@ body {
         margin: 0;
     }
 
-    .container {
+    .about-us {
         padding: 0 16px;
     }
 
@@ -216,7 +213,7 @@ body {
 @media (min-width: 768px) {
 
 
-    .container {
+    .about-us {
         padding: 0 32px;
     }
 
@@ -313,7 +310,7 @@ body {
 @media (min-width: 1336px) {
 
 
-    .container {
+    .about-us {
         padding: 0 64px;
     }
 
