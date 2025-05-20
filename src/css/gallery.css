@@ -1,0 +1,122 @@
+.section-gallery {
+  padding: 64px 0px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-gallery {
+    padding: 40px 0px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .section-gallery {
+    padding: 112px 0px;
+  }
+}
+
+.gallery-container {
+  background-color: #f2fafa;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-gallery {
+    padding: 0px 32px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .gallery-container {
+    padding: 0px 64px;
+  }
+}
+
+.gallery-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-title {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .gallery-title {
+    font-size: 52px;
+  }
+}
+
+.gallery-text {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-text {
+    margin-bottom: 80px;
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .gallery-text {
+    font-weight: 500;
+    max-width: 768px;
+  }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  min-width: 334px;
+}
+
+.gallery-li {
+  display: flex;
+  justify-content: center;
+  width: calc((100% - 24px) / 2);
+  height: auto;
+}
+
+@media screen and (min-width: 1336px) {
+  .gallery-li {
+    width: calc((100% - (24px * 2)) / 3);
+  }
+}
+
+.gallery-img {
+  border-radius: 16px;
+  min-width: 155px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-img {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .gallery-img {
+    width: 421px;
+  }
+}
