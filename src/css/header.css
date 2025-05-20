@@ -26,7 +26,16 @@ a.mobile-menu-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0;
+    padding: 20px 0;
+}
+
+.header-logo .header-logo-img {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover .header-logo-img,
+.header-logo:focus .header-logo-img {
+    opacity: 0.6;
 }
 
 .mobile-menu {
@@ -60,12 +69,10 @@ a.mobile-menu-button {
 .icon-burger-menu,
 .icon-close-burger-menu {
     cursor: pointer;
-    position: relative;
 }
 
 .icon-close-burger-menu {
     cursor: pointer;
-    position: relative;
     display: none;
 }
 
@@ -78,14 +85,8 @@ a.mobile-menu-button {
 }
 
 .icon-burger-menu,
-.icon-close-burger-menu,
-.header-icon-logo {
+.icon-close-burger-menu {
     fill: #0D0B0A;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-logo:hover .header-icon-logo {
-    fill: #9BADC9;
 }
 
 .header-navigator {
@@ -197,7 +198,7 @@ a.mobile-menu-button {
     }
 
     .header-logo {
-        padding: 20px 0;
+        padding: 24px 0;
     }
 }
 
