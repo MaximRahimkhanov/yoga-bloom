@@ -2,7 +2,7 @@
 
 .hero {
     width: 100%;
-    padding-top: 0;
+    padding-top: 64px;
     padding-bottom: 48px;
 }
 
@@ -93,7 +93,8 @@
 
     .hero {
         padding-bottom: 24px;
-        }
+        padding-top: 72px;
+    }
 
     .hero-img-wrapper {
         max-width: 768px;
@@ -115,14 +116,15 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
-    
+
     .hero-link-cover {
         width: 144px;
     }
+
     .btn-part {
         display: inline-block;
     }
-    
+
     .hero-link-other-cover {
         width: 144px;
     }
@@ -131,8 +133,8 @@
 @media only screen and (min-width: 1336px) {
 
     .hero {
-            padding-bottom: 80px;
-        }
+        padding-bottom: 80px;
+    }
 
     .hero-container {
         display: flex;
@@ -153,7 +155,7 @@
 
     .hero-text {
         margin-top: 80px;
-}
+    }
 }
 
 /* #endregion hero */
