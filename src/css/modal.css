@@ -138,10 +138,6 @@ body.no-scroll {
   .modal-contacts .form-div {
     width: calc(50% - 12px);
   }
-
-  .button-close {
-    display: none;
-  }
 }
 
 .button-modal {
