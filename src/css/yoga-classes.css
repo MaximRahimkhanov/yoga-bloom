@@ -158,8 +158,7 @@
 
   .yoga-content-title {
     font-size: 33px;
-    max-width: 343px;
-    white-space: normal;
+    max-width: 339px;
   }
   .yoga-content-list {
     flex-wrap: nowrap;
