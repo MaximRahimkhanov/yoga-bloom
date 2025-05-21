@@ -16,7 +16,7 @@
 
   <title>Yoga Bloom</title>
   <script type="module" crossorigin src="/yoga-bloom/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/yoga-bloom/assets/index-DHhh-cCv.css">
+  <link rel="stylesheet" crossorigin href="/yoga-bloom/assets/index-UlWLVXxL.css">
 </head>
 
 <body>
@@ -747,7 +747,7 @@
                             </svg>Community support group
                         </li>
                     </ul>
-                    <button type="button" class="button-pricing">Join</button>
+                    <button data-modal-open-low-price type="button" class="button-pricing">Join</button>
                 </div>
             </li>
 
@@ -772,7 +772,7 @@
                             </svg>Priority customer support
                         </li>
                     </ul>
-                    <button type="button" class="button-pricing">Join</button>
+                    <button data-modal-open-medium-price type="button" class="button-pricing">Join</button>
                 </div>
             </li>
 
@@ -815,7 +815,8 @@
                                 </svg>Community support group
                             </li>
                         </ul>
-                        <button type="button" class="button-pricing btn-absolute-wide">Join</button>
+                        <button data-modal-open-high-price type="button"
+                            class="button-pricing btn-absolute-wide">Join</button>
                     </div>
                 </div>
             </li>
@@ -949,120 +950,44 @@
 
 <!-- #endregion footer-->
 
-  <!-- first -->
-  <div class="backdrop is-open" data-modal>
-    <div class="modal">
-      <button class="button-close" type="button" aria-label="Close modal">
-        <svg class="close-icon" width="16" height="16">
-          <use href="../img/icons.svg#icon-modal-close"></use>
-        </svg>
-      </button>
-      <h2 class="modal-title">Join Now!</h2>
-      <p class="modal-text">One Session</p>
-      <p class="modal-price">$10</p>
-      <form name="form" class="form">
+  <div class="backdrop" data-modal>
+  <div class="modal" data-modal-body>
+    <button data-modal-close class="button-close" type="button" aria-label="Close modal">
+      <svg class="close-icon" width="16" height="16">
+        <use href="../img/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Join Now!</h2>
+    <p class="modal-text" data-modal-title></p>
+    <p class="modal-price" data-modal-price></p>
+    <form name="form" class="form">
+      <div class="form-div">
+        <label class="label-modal" for="user-name-first">Your Name</label>
+        <div class="input-div">
+          <input class="input" type="text" id="user-name-first" placeholder="Liam" required />
+        </div>
+      </div>
+      <div class="modal-contacts">
         <div class="form-div">
-          <label class="label-modal" for="user-name-first">Your Name</label>
+          <label class="label-modal" for="email-first">Email</label>
           <div class="input-div">
-            <input class="input" type="text" id="user-name-first" placeholder="Liam" required />
+            <input class="input" type="email" id="email-first" placeholder="hello@yogabloom.com" required />
           </div>
         </div>
-        <div class="modal-contacts">
-          <div class="form-div">
-            <label class="label-modal" for="email-first">Email</label>
-            <div class="input-div">
-              <input class="input" type="email" id="email-first" placeholder="hello@yogabloom.com" required />
-            </div>
-          </div>
-          <div class="form-div">
-            <label class="label-modal" for="phone-first">Phone number</label>
-            <div class="input-div">
-              <input class="input" type="tel" id="phone-first" placeholder="+380 (95) 123 12 12" required />
-            </div>
-          </div>
-        </div>
-        <div class="button-wrap">
-          <button type="submit" class="button-modal">Go to checkout</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- second -->
-     <div class="backdrop is-open" data-modal>
-    <div class="modal">
-      <button class="button-close" type="button" aria-label="Close modal">
-        <svg class="close-icon" width="16" height="16">
-          <use href="../img/icons.svg#icon-modal-close"></use>
-        </svg>
-      </button>
-      <h2 class="modal-title">Join Now!</h2>
-      <p class="modal-text">8 Sessions Package</p>
-      <p class="modal-price">$65</p>
-      <form name="form" class="form">
         <div class="form-div">
-          <label class="label-modal" for="user-name-second">Your Name</label>
+          <label class="label-modal" for="phone-first">Phone number</label>
           <div class="input-div">
-            <input class="input" type="text" id="user-name-second" placeholder="Liam" required />
+            <input class="input" type="tel" id="phone-first" placeholder="+380 (95) 123 12 12" required />
           </div>
         </div>
-        <div class="modal-contacts">
-          <div class="form-div">
-            <label class="label-modal" for="email-second">Email</label>
-            <div class="input-div">
-              <input class="input" type="email" id="email-second" placeholder="hello@yogabloom.com" required />
-            </div>
-          </div>
-          <div class="form-div">
-            <label class="label-modal" for="phone-second">Phone number</label>
-            <div class="input-div">
-              <input class="input" type="tel" id="phone-second" placeholder="+380 (95) 123 12 12" required />
-            </div>
-          </div>
-        </div>
-        <div class="button-wrap">
-          <button type="submit" class="button-modal">Go to checkout</button>
-        </div>
-      </form>
-    </div>
+      </div>
+      <div class="button-wrap">
+        <button type="submit" class="button-modal">Go to checkout</button>
+      </div>
+    </form>
   </div>
-    <!-- third -->
-  <div class="backdrop is-open" data-modal>
-    <div class="modal">
-      <button class="button-close" type="button" aria-label="Close modal">
-        <svg class="close-icon" width="16" height="16">
-          <use href="../img/icons.svg#icon-modal-close"></use>
-        </svg>
-      </button>
-      <h2 class="modal-title">Join Now!</h2>
-      <p class="modal-text">12 Sessions Package</p>
-      <p class="modal-price">$80</p>
-      <form name="form" class="form">
-        <div class="form-div">
-          <label class="label-modal" for="user-name-third">Your Name</label>
-          <div class="input-div">
-            <input class="input" type="text" id="user-name-third" placeholder="Liam" required />
-          </div>
-        </div>
-        <div class="modal-contacts">
-          <div class="form-div">
-            <label class="label-modal" for="email-third">Email</label>
-            <div class="input-div">
-              <input class="input" type="email" id="email-third" placeholder="hello@yogabloom.com" required />
-            </div>
-          </div>
-          <div class="form-div">
-            <label class="label-modal" for="phone-third">Phone number</label>
-            <div class="input-div">
-              <input class="input" type="tel" id="phone-third" placeholder="+380 (95) 123 12 12" required />
-            </div>
-          </div>
-        </div>
-        <div class="button-wrap">
-          <button type="submit" class="button-modal">Go to checkout</button>
-        </div>
-      </form>
-    </div>
-  </div>
+</div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
