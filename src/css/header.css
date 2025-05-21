@@ -99,6 +99,11 @@ a.mobile-menu-button {
     display: none;
 }
 
+.header-nav-list li:first-child .header-nav-link::after {
+    width: 100%;
+    background-color: rgba(13, 11, 10, 0.5);
+}
+
 .header-nav-link {
     position: relative;
     padding: 26px 0;
