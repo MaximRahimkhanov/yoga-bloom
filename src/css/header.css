@@ -104,6 +104,21 @@ a.mobile-menu-button {
     background-color: rgba(13, 11, 10, 0.5);
 }
 
+.mobile-menu-list li:first-child .mobile-menu-link {
+    position: relative;
+}
+
+.mobile-menu-list li:first-child .mobile-menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(13, 11, 10, 0.5);
+}
+
 .header-nav-link {
     position: relative;
     padding: 26px 0;
