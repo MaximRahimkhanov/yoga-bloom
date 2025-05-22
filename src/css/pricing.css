@@ -41,13 +41,6 @@
   color: #0d0b0a;
 }
 
-.div-pricing-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 24px;
-}
-
 .pricing-card {
   background: #dfebeb;
   max-width: 343px;
@@ -55,6 +48,13 @@
   border: 0px solid rgba(13, 11, 10, 0.15);
   border-radius: 16px;
   padding: 32px 24px;
+
+  transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .h3-pricing {
@@ -148,13 +148,13 @@
     padding-bottom: 40px;
   }
 
-  .container {
+  /* .container {
     display: flex;
     flex-direction: column;
     padding-left: 32px;
     padding-right: 32px;
     max-width: 768px;
-  }
+  } */
 
   .div-pricing-title {
     margin-bottom: 24px;
@@ -167,12 +167,7 @@
     width: 100%;
     max-width: 340px;
   }
-  .div-pricing-cards {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
+
   .pricing-card {
     max-width: 340px;
     width: 100%;
@@ -223,7 +218,7 @@
     max-width: 308px;
   }
 
-  .btm-ablt-wide {
+  .btn-absolute-wide {
     position: absolute;
     bottom: 0;
     max-width: 320px;
@@ -234,8 +229,6 @@
   /* hide-li Access to advanced classes in card  */
 
   .ul-pricing {
-    display: flex;
-
     flex-direction: row;
     gap: 24px;
   }
@@ -269,10 +262,6 @@
 @media (min-width: 1336px) {
   .div-pricing-title {
     margin-bottom: 40px;
-  }
-
-  .div-pricing-cards {
-    flex-direction: row;
   }
 
   .pricing-card {

@@ -3,9 +3,9 @@
         const burgerMenu = document.querySelector('.icon-burger-menu');
         const closeMenu = document.querySelector('.icon-close-burger-menu');
         const menu = document.querySelector('.mobile-menu');
-        const header = document.querySelector('.header');
         const headerButton = document.querySelector('.header-button');
         const navigationLinks = document.querySelectorAll('.navigation-link');
+        const header = document.querySelector('.header');
 
         function onToggleMenu() {
             burgerMenu.classList.toggle('is-menu-open');
