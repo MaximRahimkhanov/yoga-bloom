@@ -36,56 +36,46 @@
     gap: 16px;
 }
 
-.hero-link-cover {
-    border: 1px solid #c2d9fc;
+.link-btn {
+        border: 1px solid #c2d9fc;
+        border-radius: 100px;
+        max-width: 329px;
+        height: 46px;
+        background-color: #c2d9fc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 10px 24px;
+        color: #0d0b0a;
+        white-space: nowrap;
+}
+
+.link-btn.other {
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 100px;
-    width: 329px;
+    max-width: 329px;
     height: 46px;
-    background-color: #c2d9fc;
+    background-color: rgba(13, 11, 10, 0.05);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 10px 24px;
-    color: #0d0b0a;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-part {
     display: none;
 }
 
-.hero-link-other-cover {
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 100px;
-    width: 329px;
-    height: 46px;
-    background-color: rgba(13, 11, 10, 0.05);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-link-cover:hover,
-.hero-link-cover:focus-within,
-.hero-link-other-cover:hover,
-.hero-link-other-cover:focus-within {
+.link-btn:hover,
+.link-btn:focus,
+.link-btn.other:hover,
+.link-btn.other:focus {
     cursor: pointer;
-    background-color: #4D5664;
-    border: 1px solid #4D5664;
-}
-
-.hero-link-cover:hover .link-btn,
-.hero-link-cover:focus-within .link-btn,
-.hero-link-other-cover:hover .link-btn,
-.hero-link-other-cover:focus-within .link-btn {
+    background-color: #4d5664;
+    border: 1px solid #4d5664;
     color: #f2fafa;
 }
 
@@ -116,17 +106,17 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
-
-    .hero-link-cover {
+    
+    .link-btn {
         width: 144px;
     }
+
+        .link-btn.other {
+            width: 144px;
+        }
 
     .btn-part {
         display: inline-block;
-    }
-
-    .hero-link-other-cover {
-        width: 144px;
     }
 }
 
@@ -155,7 +145,15 @@
 
     .hero-text {
         margin-top: 80px;
-    }
+}
+
+.link-btn {
+    width: 113px;
+}
+
+.link-btn.other {
+    width: 128px;
+}
 }
 
 /* #endregion hero */
