@@ -1,16 +1,19 @@
 .footer {
   background: #dfebeb;
-  padding: 48px 0;
-  font-family: 'Sarabun', sans-serif;
+}
+
+.container.footer {
+  background-color: #dfebeb;
+  padding: 48px 16px;
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    padding: 40px 0;
+  .container.footer {
+    padding: 40px 32px;
   }
 }
 @media screen and (min-width: 1336px) {
-  .footer {
-    padding: 64px 0;
+  .container.footer {
+    padding: 64px 64px;
   }
 }
 
