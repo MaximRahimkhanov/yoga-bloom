@@ -1,6 +1,21 @@
 .about-us-container {
   background: #dfebeb;
-  padding: 64px 0px;
+}
+
+.container.about-us {
+  background-color: #dfebeb;
+  padding: 64px 16px;
+}
+@media screen and (min-width: 768px) {
+  .container.about-us {
+    padding: 80px 32px 40px 32px;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .container.about-us {
+    padding: 112px 64px;
+  }
 }
 
 .about-us-title {
@@ -88,13 +103,8 @@
 }
 
 @media (min-width: 768px) {
-  .about-us {
-    padding: 0 32px;
-  }
-
   .about-us-container {
-    padding: 80px 0px 40px 0;
-    background: #f2fafa;
+    background: transparent;
   }
 
   .about-us-title {
@@ -169,13 +179,8 @@
 }
 
 @media (min-width: 1336px) {
-  .about-us {
-    padding: 0 64px;
-  }
-
   .about-us-container {
-    padding: 112px 0px;
-    background: #f2fafa;
+    background: transparent;
   }
 
   .about-us-title {

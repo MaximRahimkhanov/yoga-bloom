@@ -1,16 +1,19 @@
 .footer {
   background: #dfebeb;
-  padding: 48px 0;
-  font-family: 'Sarabun', sans-serif;
+}
+
+.container.footer {
+  background-color: #dfebeb;
+  padding: 48px 16px;
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    padding: 40px 0;
+  .container.footer {
+    padding: 40px 32px;
   }
 }
 @media screen and (min-width: 1336px) {
-  .footer {
-    padding: 64px 0;
+  .container.footer {
+    padding: 64px 64px;
   }
 }
 
@@ -74,12 +77,22 @@
   background: rgba(13, 11, 10, 0.05);
   outline: none;
   margin-bottom: 16px;
+  transition: border-color 250ms ease-in-out, box-shadow 250ms ease;
+}
+.footer-form-input:hover,
+.footer-form-input:focus {
+  border-color: #0d0b0a;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.footer-form-input:hover::placeholder {
+  color: #0d0b0a;
 }
 .footer-form-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   color: rgba(13, 11, 10, 0.6);
+  transition: color 0.3s ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .footer-form-input {
@@ -113,6 +126,8 @@
   background-color: #4d5664;
   border: 1px solid #4d5664;
   color: #f2fafa;
+  transform: scale(1.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 768px) {
   .footer-form-btn {
