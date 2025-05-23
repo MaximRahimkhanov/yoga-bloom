@@ -2,7 +2,22 @@
 
 .yoga-classes {
   background-color: #dfebeb;
-  padding: 64px 0;
+}
+
+.container.yoga-classes {
+  background-color: #dfebeb;
+  padding: 64px 16px;
+}
+@media screen and (min-width: 768px) {
+  .container.yoga-classes {
+    padding: 40px 32px;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .container.yoga-classes {
+    padding: 112px 64px;
+  }
 }
 
 .yoga-classes img {
@@ -97,7 +112,6 @@
 @media screen and (min-width: 768px) {
   .yoga-classes {
     background-color: transparent;
-    padding: 40px 0;
   }
 
   .yoga-title-text {
@@ -146,10 +160,6 @@
 /* desktop */
 
 @media screen and (min-width: 1336px) {
-  .yoga-classes {
-    padding: 112px 0;
-  }
-
   .yoga-title-heading {
     font-size: 52px;
   }
